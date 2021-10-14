@@ -8,6 +8,7 @@ export interface JestContextOptions {
 }
 
 async function videNameEditor(page: Page, dir: string, name: string, prefix?: string) {
+
   let videSize = `${page.viewportSize().height}x${page.viewportSize().width}`;
   let nameEscaped = name.replace(/ /g, '_');
   let fileName = `${prefix ? `${prefix}_` : ''}${nameEscaped}_${Date.now()}_${videSize}.webm`;

@@ -14,7 +14,7 @@ module.exports = {
 		'jest-playwright': {
 			browsers: ['chromium'],
 			launchOptions: {
-				headless: false
+				headless: true
 			},
 			contextOptions: {
 				recordVideo: {
