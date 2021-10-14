@@ -1,1 +1,1 @@
-> docker build -f e2e.Dockerfile . -t pwt && docker run -v /tmp:/tmp -it --rm --ipc=host pwt
+> docker build -f e2e.Dockerfile . -t pwt && docker run -e ARTIFACTS_DIR=/tmp/artifacts -v /tmp:/tmp:rw -it --rm --ipc=host pwt
